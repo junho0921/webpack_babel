@@ -108,11 +108,10 @@ CMD执行 npm run cli_babel_build_v4 进行编译
 
 *通用步骤说明*
 
-依赖::
+基本依赖::
 . "@babel/cli": "^7.2.3",
 . "@babel/core": "^7.2.2",
 . "@babel/preset-env": "^7.2.3",
-. "@babel/polyfill": "^7.2.5"
 
 操作::
 CMD执行 npm run cli_babel_build_api 进行编译
@@ -125,3 +124,13 @@ commit版本 API.1.0
 . 箭头函数转换
 . 关键词this的指向兼容
 . 关键词arguments的指向兼容
+
+=== ES2015 classes
+
+commit版本 API.2.0
+
+评论::
+. super关键词指向的兼容
+. 父级构成函数继承，本身构造函数建立
+. 父级原型链继承，本身原型链建立
+. 本身静态属性建立

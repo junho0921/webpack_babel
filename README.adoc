@@ -104,3 +104,24 @@ CMD执行 npm run cli_babel_build_v4 进行编译
 编译后的代码，以下部分否被重新整理了：
 1，Promise.finally（明确编译面向环境，通过polyfill插件实现兼容）；
 
+== es6编译
+
+*通用步骤说明*
+
+依赖::
+. "@babel/cli": "^7.2.3",
+. "@babel/core": "^7.2.2",
+. "@babel/preset-env": "^7.2.3",
+. "@babel/polyfill": "^7.2.5"
+
+操作::
+CMD执行 npm run cli_babel_build_api 进行编译
+
+=== 箭头函数与关键词this
+
+commit版本 API.1.0
+
+评论::
+. 箭头函数转换
+. 关键词this的指向兼容
+. 关键词arguments的指向兼容

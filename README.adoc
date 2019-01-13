@@ -30,7 +30,7 @@ CMD执行 npm run cli_babel_build_v1 进行编译
 评论::
 由于没有配置转换工具，所以编译后的代码没有什么不同。
 
-=== 简单的编译（箭头函数）
+=== 简单使用plugin编译（箭头函数）
 
 commit --v2.0
 
@@ -44,7 +44,23 @@ CMD执行 npm run cli_babel_build_v2 进行编译
 通过CLI，配置plugins，
 箭头函数通过BABEL的插件转换为普通函数格式。
 
+=== 简单使用preset（env）编译
 
+commit --v3.0
+
+依赖::
+. "@babel/preset-env": "^7.2.3",
+
+操作::
+CMD执行 npm run cli_babel_build_v3 进行编译
+
+评论::
+通过CLI，配置preset，
+由于没有具体配置，所以env预设置了面向所有环境的插件。
+编译后的代码，以下部分否被重新整理了：
+1，箭头函数；
+2，模块输出；
+3，模块引用；
 
 
 

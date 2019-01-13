@@ -134,3 +134,14 @@ commit版本 API.2.0
 . 父级构成函数继承，本身构造函数建立
 . 父级原型链继承，本身原型链建立
 . 本身静态属性建立
+
+=== Enhanced Object Literals
+
+commit版本 API.3.0
+
+评论::
+. Object的原型对象指向__proto__
+. Object的键值定义的简写
+. Object的方法定义的简写
+. Object的方法定义的Super calls调用【请关注】
+. 键名的编程定义

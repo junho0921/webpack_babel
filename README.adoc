@@ -149,3 +149,12 @@ commit版本 API.3.0
 === Template Strings
 
 commit版本 API.4.0
+
+=== Destructuring
+
+commit版本 API.5.0
+
+. 数组解构
+. 对象解构
+. 函数参数解构
+. 解构默认值

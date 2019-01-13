@@ -1,4 +1,12 @@
 = babel学习
+jun.ho.more@gmail.com
+:toc: left
+:toclevels: 3
+:toc-title: 目录
+:numbered:
+:sectanchors:
+:sectlinks:
+:sectnums:
 
 == 基本说明
 

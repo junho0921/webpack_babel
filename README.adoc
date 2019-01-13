@@ -182,3 +182,21 @@ commit版本 API.8.0
 
 . 实现：for of 遍历数组，通过for循环实现。
 . 实现：Iterators遍历器的实现
+
+=== Generators
+
+commit版本 API.9.0
+
+依赖：基本依赖+polyfill（Generators的实现需要polyfill模块）
+
+// TODO 待确认
+Generators可以说是Iterator的简写语法。
+实现了iterators的next/throw方法
+
+. 实现简单的generator
+    .. 作用域
+    .. 切割函数执行内容为数个单独的迭代逻辑
+    .. 记录迭代周期ID
+    .. switch方式，执行对应周期的内容并返回值
+. 实现复杂的generator
+    .. 转换for循环为switch实现

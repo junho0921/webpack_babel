@@ -85,3 +85,22 @@ CMD执行 npm run cli_babel_build_v4 进行编译
 2，对象spread语法（由于面向环境不都支持，所以被转换为兼容模式）；
 3，Promise.finally（虽然已经明确编译面向环境，但需要polyfill才能实现兼容）；
 
+=== 简单使用Polyfill
+
+commit版本 v5.0
+
+依赖::
+. "@babel/cli": "^7.2.3",
+. "@babel/core": "^7.2.2",
+. "@babel/preset-env": "^7.2.3",
+. "@babel/polyfill": "^7.2.5"
+
+操作::
+CMD执行 npm run cli_babel_build_v4 进行编译
+
+评论::
+具体配置编译面向的环境，
+并配置useBuiltIns参数值为usage，
+编译后的代码，以下部分否被重新整理了：
+1，Promise.finally（明确编译面向环境，通过polyfill插件实现兼容）；
+

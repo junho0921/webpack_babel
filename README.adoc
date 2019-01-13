@@ -145,3 +145,7 @@ commit版本 API.3.0
 . Object的方法定义的简写
 . Object的方法定义的Super calls调用【请关注】
 . 键名的编程定义
+
+=== Template Strings
+
+commit版本 API.4.0

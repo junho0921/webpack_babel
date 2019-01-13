@@ -9,5 +9,6 @@ const ArrowFunction = () => 'this is ArrowFunction';
 const mixObj = {
     ...{val1: 1}
 };
+const promise = Promise.resolve().finally();
 
 

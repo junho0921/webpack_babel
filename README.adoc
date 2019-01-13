@@ -68,7 +68,7 @@ CMD执行 npm run cli_babel_build_v3 进行编译
 
 === 简单使用配置文件
 
-commit版本 v4.0
+commit版本 v4.1
 
 依赖::
 . "@babel/cli": "^7.2.3",
@@ -83,4 +83,5 @@ CMD执行 npm run cli_babel_build_v4 进行编译
 编译后的代码，以下部分否被重新整理了：
 1，箭头函数（由于面向环境都有支持，所以没有转换）；
 2，对象spread语法（由于面向环境不都支持，所以被转换为兼容模式）；
+3，Promise.finally（虽然已经明确编译面向环境，但需要polyfill才能实现兼容）；
 

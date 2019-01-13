@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js --mode development",
-    "cli_babel_build": "./node_modules/.bin/babel src --out-dir lib"
+    "cli_babel_build_v1": "./node_modules/.bin/babel src --out-dir lib",
+    "cli_babel_build_v2": "./node_modules/.bin/babel src --out-dir lib --plugins=@babel/plugin-transform-arrow-functions"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
   }

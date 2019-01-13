@@ -14,11 +14,11 @@ jun.ho.more@gmail.com
 . src 编译前的代码
 . lib 编译后的代码
 
-== 实验
+== 入门实验
 
 === cli命令编译
 
-commit --v1.0
+commit版本 v1.0
 
 依赖::
 . "@babel/cli": "^7.2.3",
@@ -32,9 +32,11 @@ CMD执行 npm run cli_babel_build_v1 进行编译
 
 === 简单使用plugin编译（箭头函数）
 
-commit --v2.0
+commit版本 v2.0
 
 依赖::
+. "@babel/cli": "^7.2.3",
+. "@babel/core": "^7.2.2",
 . "@babel/plugin-transform-arrow-functions": "^7.2.0",
 
 操作::
@@ -46,9 +48,11 @@ CMD执行 npm run cli_babel_build_v2 进行编译
 
 === 简单使用preset（env）编译
 
-commit --v3.0
+commit版本 v3.0
 
 依赖::
+. "@babel/cli": "^7.2.3",
+. "@babel/core": "^7.2.2",
 . "@babel/preset-env": "^7.2.3",
 
 操作::
@@ -62,5 +66,21 @@ CMD执行 npm run cli_babel_build_v3 进行编译
 2，模块输出；
 3，模块引用；
 
+=== 简单使用配置文件
 
+commit版本 v4.0
+
+依赖::
+. "@babel/cli": "^7.2.3",
+. "@babel/core": "^7.2.2",
+. "@babel/preset-env": "^7.2.3",
+
+操作::
+CMD执行 npm run cli_babel_build_v4 进行编译
+
+评论::
+具体配置编译面向的环境，
+编译后的代码，以下部分否被重新整理了：
+1，箭头函数（由于面向环境都有支持，所以没有转换）；
+2，对象spread语法（由于面向环境不都支持，所以被转换为兼容模式）；
 

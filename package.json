@@ -7,7 +7,8 @@
     "build": "webpack --config webpack.config.js --mode development",
     "cli_babel_build_v1": "./node_modules/.bin/babel src --out-dir lib",
     "cli_babel_build_v2": "./node_modules/.bin/babel src --out-dir lib --plugins=@babel/plugin-transform-arrow-functions",
-    "cli_babel_build_v3": "./node_modules/.bin/babel src --out-dir lib --presets=@babel/env"
+    "cli_babel_build_v3": "./node_modules/.bin/babel src --out-dir lib --presets=@babel/env",
+    "cli_babel_build_v4": "./node_modules/.bin/babel src --out-dir lib"
   },
   "author": "",
   "license": "ISC",

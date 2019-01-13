@@ -6,4 +6,8 @@ require.ensure('./b', function () {
 });
 
 const ArrowFunction = () => 'this is ArrowFunction';
+const mixObj = {
+    ...{val1: 1}
+};
+
 

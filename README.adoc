@@ -158,3 +158,11 @@ commit版本 API.5.0
 . 对象解构
 . 函数参数解构
 . 解构默认值
+
+=== Default + Rest + Spread
+
+commit版本 API.6.0
+
+. 实现：函数参数的默认值
+. 实现：函数参数rest参数的智能计算
+. 实现：数组spread形式的入参

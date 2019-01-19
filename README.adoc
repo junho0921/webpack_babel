@@ -255,8 +255,16 @@ Proxies enable creation of objects with the full range of behaviors available to
 
 commit版本 API.13.0
 
+依赖：基本依赖+polyfill
+
 由于ES5的限制，Symbols是有限制的被polyfill支持，部分特性是不能polyfill
 
+=== Math + Number + String + Object APIs
 
+commit版本 API.14.0
+
+依赖：基本依赖+polyfill
+
+由于ES5的限制，大部分的APIs都被polyfill支持，部分特性是不能polyfill
 
 

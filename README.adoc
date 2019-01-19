@@ -206,3 +206,35 @@ Generators可以说是Iterator的简写语法。
 commit版本 API.10.0
 
 依赖：基本依赖+polyfill
+
+=== Modules
+
+commit版本 API.11.0
+
+// TODO 模块理解与实验，自定义模块加载器
+
+Language-level support for modules for component definition.
+Implicitly async model – no code executes until requested modules are available and processed.
+
+依赖：基本依赖+polyfill（Iterators的实现需要polyfill模块）
+
+. 实现：es6的新特性export default 与 export *
+
+=== Module Loaders
+
+commit版本 API.11.0
+
+依赖：基本依赖+polyfill
+
+Module Loaders不属于ES2015
+
+This is left as implementation-defined within the ECMAScript 2015 specification.
+
+Module loaders support::
+. Dynamic loading
+. State isolation
+. Global namespace isolation
+. Compilation hooks
+. Nested virtualization
+
+使用Babel的Module Loader，需要配置system模块。

@@ -244,3 +244,19 @@ Module loaders support::
 commit版本 API.12.0
 
 依赖：基本依赖+polyfill
+
+=== Proxies
+
+由于ES5的限制，Proxies不能被转译或polyfill
+
+Proxies enable creation of objects with the full range of behaviors available to host objects. Can be used for interception, object virtualization, logging/profiling, etc.
+
+=== Symbols
+
+commit版本 API.13.0
+
+由于ES5的限制，Symbols是有限制的被polyfill支持，部分特性是不能polyfill
+
+
+
+

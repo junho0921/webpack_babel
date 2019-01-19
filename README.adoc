@@ -238,3 +238,9 @@ Module loaders support::
 . Nested virtualization
 
 使用Babel的Module Loader，需要配置system模块。
+
+=== Map + Set + WeakMap + WeakSet
+
+commit版本 API.12.0
+
+依赖：基本依赖+polyfill

@@ -267,4 +267,19 @@ commit版本 API.14.0
 
 由于ES5的限制，大部分的APIs都被polyfill支持，部分特性是不能polyfill
 
+=== Promises
+
+commit版本 API.15.0
+
+依赖：基本依赖+polyfill
+
+Promises are a first class representation of a value that may be made available in the future.
+
+=== Reflect
+
+commit版本 API.15.0
+
+依赖：基本依赖+polyfill
+
+Full reflection API exposing the runtime-level meta-operations on objects. This is effectively the inverse of the Proxy API, and allows making calls corresponding to the same meta-operations as the proxy traps. Especially useful for implementing proxies.
 
